@@ -2,7 +2,8 @@
 
 const judgeCircle = moves => {
   let coords = [0, 0]
-  for (let i = 0; i < moves.split('').length; i++) {
+  moves = moves.split('')
+  for (let i = 0; i < moves.length; i++) {
     switch (moves[i]) {
       case 'U':
         coords[1] += 1
